@@ -38,7 +38,7 @@ function! airline#extensions#tabline#buflist#list()
     endif
   endfor
 
-  let s:current_buffer_list = buffers
+  let s:current_buffer_list = sort(buffers)
   return buffers
 endfunction
 
